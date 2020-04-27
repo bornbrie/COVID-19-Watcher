@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA1818D7244FAFCE0011640D /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1818D6244FAFCE0011640D /* AppPreferences.swift */; };
+		AA1818D9245011050011640D /* CountrySummaryCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1818D8245011050011640D /* CountrySummaryCardViews.swift */; };
+		AA2BB25D244BA30B00AED50F /* FetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BB25C244BA30B00AED50F /* FetcherService.swift */; };
+		AA2BB25F244BAD0E00AED50F /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BB25E244BAD0E00AED50F /* Summary.swift */; };
+		AA2BB261244BB7D800AED50F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BB260244BB7D800AED50F /* AppState.swift */; };
+		AA2BB265244C34EE00AED50F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BB264244C34EE00AED50F /* ContentView.swift */; };
+		AA2BB268244C61A200AED50F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BB267244C61A200AED50F /* SearchBar.swift */; };
+		AA2BB26D244D0BA200AED50F /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BB26C244D0BA200AED50F /* StatsView.swift */; };
+		AA54342E24556C790045AF20 /* TotalCasesStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA54342D24556C790045AF20 /* TotalCasesStatView.swift */; };
+		AA543430245578E10045AF20 /* GlobalSummaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA54342F245578E10045AF20 /* GlobalSummaryCardView.swift */; };
+		AA543432245583F30045AF20 /* ConfirmedStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA543431245583F30045AF20 /* ConfirmedStatsView.swift */; };
+		AA5434342455843B0045AF20 /* DeathsStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5434332455843B0045AF20 /* DeathsStatsView.swift */; };
+		AA543436245584620045AF20 /* RecoveredStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA543435245584620045AF20 /* RecoveredStatsView.swift */; };
+		AA5434382455873F0045AF20 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5434372455873F0045AF20 /* Stats.swift */; };
+		AA5DF664244D131F00846B79 /* SummaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DF663244D131F00846B79 /* SummaryCardView.swift */; };
+		AA82DD5224565C7600CC29EA /* GlobalSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E99724564CCE0026E219 /* GlobalSummary.swift */; };
+		AA8FE66424280B6100DDA53A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FE66324280B6100DDA53A /* AppDelegate.swift */; };
+		AA8FE66624280B6100DDA53A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FE66524280B6100DDA53A /* SceneDelegate.swift */; };
+		AA8FE66824280B6100DDA53A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FE66724280B6100DDA53A /* HomeView.swift */; };
+		AA8FE66A24280B6400DDA53A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8FE66924280B6400DDA53A /* Assets.xcassets */; };
+		AA8FE66D24280B6400DDA53A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8FE66C24280B6400DDA53A /* Preview Assets.xcassets */; };
+		AA8FE67024280B6400DDA53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8FE66E24280B6400DDA53A /* LaunchScreen.storyboard */; };
+		AA8FE67824280BCD00DDA53A /* PatientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FE67724280BCD00DDA53A /* PatientStatus.swift */; };
+		AA99E93E24562E4B0026E219 /* CovidWatcher WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AA99E93D24562E4B0026E219 /* CovidWatcher WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA99E94424562E4B0026E219 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA99E94224562E4B0026E219 /* Interface.storyboard */; };
+		AA99E94D24562E4C0026E219 /* CovidWatcher WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA99E94C24562E4C0026E219 /* CovidWatcher WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA99E95424562E4C0026E219 /* SummaryHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E95324562E4C0026E219 /* SummaryHostingController.swift */; };
+		AA99E95624562E4C0026E219 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E95524562E4C0026E219 /* ExtensionDelegate.swift */; };
+		AA99E95824562E4C0026E219 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E95724562E4C0026E219 /* NotificationController.swift */; };
+		AA99E95A24562E4C0026E219 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E95924562E4C0026E219 /* NotificationView.swift */; };
+		AA99E95C24562E4C0026E219 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E95B24562E4C0026E219 /* ComplicationController.swift */; };
+		AA99E96124562E4D0026E219 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA99E96024562E4D0026E219 /* Preview Assets.xcassets */; };
+		AA99E96F24562E8B0026E219 /* PatientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FE67724280BCD00DDA53A /* PatientStatus.swift */; };
+		AA99E97024562E910026E219 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5434372455873F0045AF20 /* Stats.swift */; };
+		AA99E97124562E9A0026E219 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BB260244BB7D800AED50F /* AppState.swift */; };
+		AA99E97224562E9A0026E219 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1818D6244FAFCE0011640D /* AppPreferences.swift */; };
+		AA99E97424562EA10026E219 /* FetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BB25C244BA30B00AED50F /* FetcherService.swift */; };
+		AA99E97724562EAE0026E219 /* LastUpdatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD8769E245567E100895A6E /* LastUpdatedView.swift */; };
+		AA99E97824562EAE0026E219 /* WatchCountryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD8769824550A0900895A6E /* WatchCountryButton.swift */; };
+		AA99E97A24562EB30026E219 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BB26C244D0BA200AED50F /* StatsView.swift */; };
+		AA99E97B24562EB30026E219 /* ConfirmedStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA543431245583F30045AF20 /* ConfirmedStatsView.swift */; };
+		AA99E97C24562EB30026E219 /* DeathsStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5434332455843B0045AF20 /* DeathsStatsView.swift */; };
+		AA99E97D24562EB30026E219 /* TotalCasesStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA54342D24556C790045AF20 /* TotalCasesStatView.swift */; };
+		AA99E97E24562EB30026E219 /* RecoveredStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA543435245584620045AF20 /* RecoveredStatsView.swift */; };
+		AA99E97F24562EBA0026E219 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BB25E244BAD0E00AED50F /* Summary.swift */; };
+		AA99E98024562EBA0026E219 /* SummaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DF663244D131F00846B79 /* SummaryCardView.swift */; };
+		AA99E98124562EBA0026E219 /* GlobalSummaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA54342F245578E10045AF20 /* GlobalSummaryCardView.swift */; };
+		AA99E98224562EBA0026E219 /* CountrySummaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD8769C245567A100895A6E /* CountrySummaryCardView.swift */; };
+		AA99E98324562EBA0026E219 /* WatchingCountriesSummaryCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD8769A2455677F00895A6E /* WatchingCountriesSummaryCardViews.swift */; };
+		AA99E98424562EBA0026E219 /* CountrySummaryCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1818D8245011050011640D /* CountrySummaryCardViews.swift */; };
+		AA99E98524562EBA0026E219 /* CountrySummaryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6903024560D5300840EBD /* CountrySummaryList.swift */; };
+		AA99E98624562EBF0026E219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8FE66924280B6400DDA53A /* Assets.xcassets */; };
+		AA99E98724562EC10026E219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8FE66924280B6400DDA53A /* Assets.xcassets */; };
+		AA99E98824562EC10026E219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8FE66924280B6400DDA53A /* Assets.xcassets */; };
+		AA99E98A245631680026E219 /* HomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E989245631680026E219 /* HomeList.swift */; };
+		AA99E98F24563EE50026E219 /* WatchSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E98E24563EE50026E219 /* WatchSummaryView.swift */; };
+		AA99E991245641020026E219 /* WatchingCountriesHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E990245641020026E219 /* WatchingCountriesHostingController.swift */; };
+		AA99E993245648380026E219 /* WorldTotal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E992245648380026E219 /* WorldTotal.swift */; };
+		AA99E994245649070026E219 /* WorldTotal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E992245648380026E219 /* WorldTotal.swift */; };
+		AA99E99624564CB20026E219 /* CountrySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E99524564CB20026E219 /* CountrySummary.swift */; };
+		AA99E99824564CCE0026E219 /* GlobalSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E99724564CCE0026E219 /* GlobalSummary.swift */; };
+		AA99E99C24564E2D0026E219 /* CountrySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E99524564CB20026E219 /* CountrySummary.swift */; };
+		AAB6903124560D5300840EBD /* CountrySummaryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6903024560D5300840EBD /* CountrySummaryList.swift */; };
+		AABC164E2455969300A55936 /* Covid19ApiSafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC164D2455969300A55936 /* Covid19ApiSafariView.swift */; };
+		AAD8769924550A0900895A6E /* WatchCountryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD8769824550A0900895A6E /* WatchCountryButton.swift */; };
+		AAD8769B2455677F00895A6E /* WatchingCountriesSummaryCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD8769A2455677F00895A6E /* WatchingCountriesSummaryCardViews.swift */; };
+		AAD8769D245567A100895A6E /* CountrySummaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD8769C245567A100895A6E /* CountrySummaryCardView.swift */; };
+		AAD8769F245567E100895A6E /* LastUpdatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD8769E245567E100895A6E /* LastUpdatedView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA99E93F24562E4B0026E219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA8FE65824280B6100DDA53A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA99E93C24562E4B0026E219;
+			remoteInfo = "CovidWatcher WatchKit App";
+		};
+		AA99E94E24562E4C0026E219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA8FE65824280B6100DDA53A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA99E94B24562E4C0026E219;
+			remoteInfo = "CovidWatcher WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA99E96624562E4D0026E219 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AA99E93E24562E4B0026E219 /* CovidWatcher WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA99E96924562E4D0026E219 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AA99E94D24562E4C0026E219 /* CovidWatcher WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA1818D6244FAFCE0011640D /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		AA1818D8245011050011640D /* CountrySummaryCardViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySummaryCardViews.swift; sourceTree = "<group>"; };
+		AA2BB25C244BA30B00AED50F /* FetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetcherService.swift; sourceTree = "<group>"; };
+		AA2BB25E244BAD0E00AED50F /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		AA2BB260244BB7D800AED50F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		AA2BB264244C34EE00AED50F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA2BB266244C3D7400AED50F /* COVID-19.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "COVID-19.entitlements"; sourceTree = "<group>"; };
+		AA2BB267244C61A200AED50F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		AA2BB26C244D0BA200AED50F /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		AA54342D24556C790045AF20 /* TotalCasesStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCasesStatView.swift; sourceTree = "<group>"; };
+		AA54342F245578E10045AF20 /* GlobalSummaryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSummaryCardView.swift; sourceTree = "<group>"; };
+		AA543431245583F30045AF20 /* ConfirmedStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmedStatsView.swift; sourceTree = "<group>"; };
+		AA5434332455843B0045AF20 /* DeathsStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathsStatsView.swift; sourceTree = "<group>"; };
+		AA543435245584620045AF20 /* RecoveredStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveredStatsView.swift; sourceTree = "<group>"; };
+		AA5434372455873F0045AF20 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		AA5DF663244D131F00846B79 /* SummaryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCardView.swift; sourceTree = "<group>"; };
+		AA8FE66024280B6100DDA53A /* COVID-19 Watcher Watcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID-19 Watcher Watcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8FE66324280B6100DDA53A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA8FE66524280B6100DDA53A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA8FE66724280B6100DDA53A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AA8FE66924280B6400DDA53A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA8FE66C24280B6400DDA53A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA8FE66F24280B6400DDA53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA8FE67124280B6400DDA53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA8FE67724280BCD00DDA53A /* PatientStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientStatus.swift; sourceTree = "<group>"; };
+		AA99E93A24562E4B0026E219 /* CovidWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA99E93D24562E4B0026E219 /* CovidWatcher WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CovidWatcher WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA99E94324562E4B0026E219 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AA99E94724562E4C0026E219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA99E94C24562E4C0026E219 /* CovidWatcher WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CovidWatcher WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA99E95324562E4C0026E219 /* SummaryHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryHostingController.swift; sourceTree = "<group>"; };
+		AA99E95524562E4C0026E219 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AA99E95724562E4C0026E219 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AA99E95924562E4C0026E219 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		AA99E95B24562E4C0026E219 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		AA99E96024562E4D0026E219 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA99E96224562E4D0026E219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA99E96324562E4D0026E219 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AA99E989245631680026E219 /* HomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeList.swift; sourceTree = "<group>"; };
+		AA99E98E24563EE50026E219 /* WatchSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSummaryView.swift; sourceTree = "<group>"; };
+		AA99E990245641020026E219 /* WatchingCountriesHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingCountriesHostingController.swift; sourceTree = "<group>"; };
+		AA99E992245648380026E219 /* WorldTotal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTotal.swift; sourceTree = "<group>"; };
+		AA99E99524564CB20026E219 /* CountrySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySummary.swift; sourceTree = "<group>"; };
+		AA99E99724564CCE0026E219 /* GlobalSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSummary.swift; sourceTree = "<group>"; };
+		AAB6903024560D5300840EBD /* CountrySummaryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySummaryList.swift; sourceTree = "<group>"; };
+		AABC164D2455969300A55936 /* Covid19ApiSafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19ApiSafariView.swift; sourceTree = "<group>"; };
+		AAD8769824550A0900895A6E /* WatchCountryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCountryButton.swift; sourceTree = "<group>"; };
+		AAD8769A2455677F00895A6E /* WatchingCountriesSummaryCardViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingCountriesSummaryCardViews.swift; sourceTree = "<group>"; };
+		AAD8769C245567A100895A6E /* CountrySummaryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySummaryCardView.swift; sourceTree = "<group>"; };
+		AAD8769E245567E100895A6E /* LastUpdatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUpdatedView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA8FE65D24280B6100DDA53A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA99E94924562E4C0026E219 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA1E67DE245628A400447FB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FE67724280BCD00DDA53A /* PatientStatus.swift */,
+				AA5434372455873F0045AF20 /* Stats.swift */,
+				AA99E992245648380026E219 /* WorldTotal.swift */,
+				AA2BB25E244BAD0E00AED50F /* Summary.swift */,
+				AA99E99524564CB20026E219 /* CountrySummary.swift */,
+				AA99E99724564CCE0026E219 /* GlobalSummary.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA1E67DF245628BC00447FB7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA2BB260244BB7D800AED50F /* AppState.swift */,
+				AA1818D6244FAFCE0011640D /* AppPreferences.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA1E67E0245628D600447FB7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AA1E67DF245628BC00447FB7 /* App */,
+				AA1E67E1245628EA00447FB7 /* Fetcher */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AA1E67E1245628EA00447FB7 /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				AA2BB25C244BA30B00AED50F /* FetcherService.swift */,
+			);
+			path = Fetcher;
+			sourceTree = "<group>";
+		};
+		AA1E67E2245629BA00447FB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA2BB264244C34EE00AED50F /* ContentView.swift */,
+				AA8FE66724280B6100DDA53A /* HomeView.swift */,
+				AA99E989245631680026E219 /* HomeList.swift */,
+				AA2BB267244C61A200AED50F /* SearchBar.swift */,
+				AAD8769E245567E100895A6E /* LastUpdatedView.swift */,
+				AAD8769824550A0900895A6E /* WatchCountryButton.swift */,
+				AABC164D2455969300A55936 /* Covid19ApiSafariView.swift */,
+				AABC164A24558D0A00A55936 /* SummaryCardView */,
+				AAB6902D2456016C00840EBD /* StatsView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA8FE65724280B6100DDA53A = {
+			isa = PBXGroup;
+			children = (
+				AA8FE66224280B6100DDA53A /* COVID-19 */,
+				AA99E94124562E4B0026E219 /* CovidWatcher WatchKit App */,
+				AA99E95024562E4C0026E219 /* CovidWatcher WatchKit Extension */,
+				AA8FE66124280B6100DDA53A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA8FE66124280B6100DDA53A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FE66024280B6100DDA53A /* COVID-19 Watcher Watcher.app */,
+				AA99E93A24562E4B0026E219 /* CovidWatcher.app */,
+				AA99E93D24562E4B0026E219 /* CovidWatcher WatchKit App.app */,
+				AA99E94C24562E4C0026E219 /* CovidWatcher WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA8FE66224280B6100DDA53A /* COVID-19 */ = {
+			isa = PBXGroup;
+			children = (
+				AA2BB266244C3D7400AED50F /* COVID-19.entitlements */,
+				AA8FE66324280B6100DDA53A /* AppDelegate.swift */,
+				AA8FE66524280B6100DDA53A /* SceneDelegate.swift */,
+				AA1E67DE245628A400447FB7 /* Model */,
+				AA1E67E0245628D600447FB7 /* Service */,
+				AA1E67E2245629BA00447FB7 /* View */,
+				AA8FE66924280B6400DDA53A /* Assets.xcassets */,
+				AA8FE66E24280B6400DDA53A /* LaunchScreen.storyboard */,
+				AA8FE67124280B6400DDA53A /* Info.plist */,
+				AA8FE66B24280B6400DDA53A /* Preview Content */,
+			);
+			path = "COVID-19";
+			sourceTree = "<group>";
+		};
+		AA8FE66B24280B6400DDA53A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FE66C24280B6400DDA53A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA99E94124562E4B0026E219 /* CovidWatcher WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AA99E94224562E4B0026E219 /* Interface.storyboard */,
+				AA99E94724562E4C0026E219 /* Info.plist */,
+			);
+			path = "CovidWatcher WatchKit App";
+			sourceTree = "<group>";
+		};
+		AA99E95024562E4C0026E219 /* CovidWatcher WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AA99E95324562E4C0026E219 /* SummaryHostingController.swift */,
+				AA99E990245641020026E219 /* WatchingCountriesHostingController.swift */,
+				AA99E98E24563EE50026E219 /* WatchSummaryView.swift */,
+				AA99E95524562E4C0026E219 /* ExtensionDelegate.swift */,
+				AA99E95724562E4C0026E219 /* NotificationController.swift */,
+				AA99E95924562E4C0026E219 /* NotificationView.swift */,
+				AA99E95B24562E4C0026E219 /* ComplicationController.swift */,
+				AA99E96224562E4D0026E219 /* Info.plist */,
+				AA99E96324562E4D0026E219 /* PushNotificationPayload.apns */,
+				AA99E95F24562E4D0026E219 /* Preview Content */,
+			);
+			path = "CovidWatcher WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AA99E95F24562E4D0026E219 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA99E96024562E4D0026E219 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AAB6902D2456016C00840EBD /* StatsView */ = {
+			isa = PBXGroup;
+			children = (
+				AA2BB26C244D0BA200AED50F /* StatsView.swift */,
+				AA54342D24556C790045AF20 /* TotalCasesStatView.swift */,
+				AA543431245583F30045AF20 /* ConfirmedStatsView.swift */,
+				AA5434332455843B0045AF20 /* DeathsStatsView.swift */,
+				AA543435245584620045AF20 /* RecoveredStatsView.swift */,
+			);
+			path = StatsView;
+			sourceTree = "<group>";
+		};
+		AABC164A24558D0A00A55936 /* SummaryCardView */ = {
+			isa = PBXGroup;
+			children = (
+				AA5DF663244D131F00846B79 /* SummaryCardView.swift */,
+				AA54342F245578E10045AF20 /* GlobalSummaryCardView.swift */,
+				AAD8769C245567A100895A6E /* CountrySummaryCardView.swift */,
+				AA1818D8245011050011640D /* CountrySummaryCardViews.swift */,
+				AAD8769A2455677F00895A6E /* WatchingCountriesSummaryCardViews.swift */,
+				AAB6903024560D5300840EBD /* CountrySummaryList.swift */,
+			);
+			path = SummaryCardView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA8FE65F24280B6100DDA53A /* COVID-19 Watcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA8FE67424280B6400DDA53A /* Build configuration list for PBXNativeTarget "COVID-19 Watcher" */;
+			buildPhases = (
+				AA8FE65C24280B6100DDA53A /* Sources */,
+				AA8FE65D24280B6100DDA53A /* Frameworks */,
+				AA8FE65E24280B6100DDA53A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "COVID-19 Watcher";
+			productName = "COVID-19";
+			productReference = AA8FE66024280B6100DDA53A /* COVID-19 Watcher Watcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA99E93924562E4B0026E219 /* CovidWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA99E96E24562E4D0026E219 /* Build configuration list for PBXNativeTarget "CovidWatcher" */;
+			buildPhases = (
+				AA99E93824562E4B0026E219 /* Resources */,
+				AA99E96624562E4D0026E219 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA99E94024562E4B0026E219 /* PBXTargetDependency */,
+			);
+			name = CovidWatcher;
+			productName = CovidWatcher;
+			productReference = AA99E93A24562E4B0026E219 /* CovidWatcher.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		AA99E93C24562E4B0026E219 /* CovidWatcher WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA99E96D24562E4D0026E219 /* Build configuration list for PBXNativeTarget "CovidWatcher WatchKit App" */;
+			buildPhases = (
+				AA99E93B24562E4B0026E219 /* Resources */,
+				AA99E96924562E4D0026E219 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA99E94F24562E4C0026E219 /* PBXTargetDependency */,
+			);
+			name = "CovidWatcher WatchKit App";
+			productName = "CovidWatcher WatchKit App";
+			productReference = AA99E93D24562E4B0026E219 /* CovidWatcher WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AA99E94B24562E4C0026E219 /* CovidWatcher WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA99E96C24562E4D0026E219 /* Build configuration list for PBXNativeTarget "CovidWatcher WatchKit Extension" */;
+			buildPhases = (
+				AA99E94824562E4C0026E219 /* Sources */,
+				AA99E94924562E4C0026E219 /* Frameworks */,
+				AA99E94A24562E4C0026E219 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CovidWatcher WatchKit Extension";
+			productName = "CovidWatcher WatchKit Extension";
+			productReference = AA99E94C24562E4C0026E219 /* CovidWatcher WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA8FE65824280B6100DDA53A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Brianna Zamora";
+				TargetAttributes = {
+					AA8FE65F24280B6100DDA53A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					AA99E93924562E4B0026E219 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					AA99E93C24562E4B0026E219 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					AA99E94B24562E4C0026E219 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = AA8FE65B24280B6100DDA53A /* Build configuration list for PBXProject "COVID-19 Watcher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA8FE65724280B6100DDA53A;
+			productRefGroup = AA8FE66124280B6100DDA53A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA8FE65F24280B6100DDA53A /* COVID-19 Watcher */,
+				AA99E93924562E4B0026E219 /* CovidWatcher */,
+				AA99E93C24562E4B0026E219 /* CovidWatcher WatchKit App */,
+				AA99E94B24562E4C0026E219 /* CovidWatcher WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA8FE65E24280B6100DDA53A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8FE67024280B6400DDA53A /* LaunchScreen.storyboard in Resources */,
+				AA8FE66D24280B6400DDA53A /* Preview Assets.xcassets in Resources */,
+				AA8FE66A24280B6400DDA53A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA99E93824562E4B0026E219 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA99E98624562EBF0026E219 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA99E93B24562E4B0026E219 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA99E98724562EC10026E219 /* Assets.xcassets in Resources */,
+				AA99E94424562E4B0026E219 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA99E94A24562E4C0026E219 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA99E96124562E4D0026E219 /* Preview Assets.xcassets in Resources */,
+				AA99E98824562EC10026E219 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA8FE65C24280B6100DDA53A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA2BB26D244D0BA200AED50F /* StatsView.swift in Sources */,
+				AA2BB261244BB7D800AED50F /* AppState.swift in Sources */,
+				AA99E98A245631680026E219 /* HomeList.swift in Sources */,
+				AA54342E24556C790045AF20 /* TotalCasesStatView.swift in Sources */,
+				AAD8769F245567E100895A6E /* LastUpdatedView.swift in Sources */,
+				AA99E99624564CB20026E219 /* CountrySummary.swift in Sources */,
+				AA2BB25F244BAD0E00AED50F /* Summary.swift in Sources */,
+				AAD8769924550A0900895A6E /* WatchCountryButton.swift in Sources */,
+				AA2BB265244C34EE00AED50F /* ContentView.swift in Sources */,
+				AA1818D7244FAFCE0011640D /* AppPreferences.swift in Sources */,
+				AA5DF664244D131F00846B79 /* SummaryCardView.swift in Sources */,
+				AAD8769D245567A100895A6E /* CountrySummaryCardView.swift in Sources */,
+				AA8FE66424280B6100DDA53A /* AppDelegate.swift in Sources */,
+				AA8FE66624280B6100DDA53A /* SceneDelegate.swift in Sources */,
+				AA8FE66824280B6100DDA53A /* HomeView.swift in Sources */,
+				AA5434382455873F0045AF20 /* Stats.swift in Sources */,
+				AA2BB268244C61A200AED50F /* SearchBar.swift in Sources */,
+				AA543436245584620045AF20 /* RecoveredStatsView.swift in Sources */,
+				AA8FE67824280BCD00DDA53A /* PatientStatus.swift in Sources */,
+				AA1818D9245011050011640D /* CountrySummaryCardViews.swift in Sources */,
+				AAB6903124560D5300840EBD /* CountrySummaryList.swift in Sources */,
+				AA5434342455843B0045AF20 /* DeathsStatsView.swift in Sources */,
+				AA2BB25D244BA30B00AED50F /* FetcherService.swift in Sources */,
+				AABC164E2455969300A55936 /* Covid19ApiSafariView.swift in Sources */,
+				AA99E993245648380026E219 /* WorldTotal.swift in Sources */,
+				AA99E99824564CCE0026E219 /* GlobalSummary.swift in Sources */,
+				AA543430245578E10045AF20 /* GlobalSummaryCardView.swift in Sources */,
+				AAD8769B2455677F00895A6E /* WatchingCountriesSummaryCardViews.swift in Sources */,
+				AA543432245583F30045AF20 /* ConfirmedStatsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA99E94824562E4C0026E219 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA99E97E24562EB30026E219 /* RecoveredStatsView.swift in Sources */,
+				AA99E97224562E9A0026E219 /* AppPreferences.swift in Sources */,
+				AA99E97424562EA10026E219 /* FetcherService.swift in Sources */,
+				AA99E98524562EBA0026E219 /* CountrySummaryList.swift in Sources */,
+				AA99E97B24562EB30026E219 /* ConfirmedStatsView.swift in Sources */,
+				AA82DD5224565C7600CC29EA /* GlobalSummary.swift in Sources */,
+				AA99E95424562E4C0026E219 /* SummaryHostingController.swift in Sources */,
+				AA99E98324562EBA0026E219 /* WatchingCountriesSummaryCardViews.swift in Sources */,
+				AA99E98224562EBA0026E219 /* CountrySummaryCardView.swift in Sources */,
+				AA99E96F24562E8B0026E219 /* PatientStatus.swift in Sources */,
+				AA99E99C24564E2D0026E219 /* CountrySummary.swift in Sources */,
+				AA99E991245641020026E219 /* WatchingCountriesHostingController.swift in Sources */,
+				AA99E97A24562EB30026E219 /* StatsView.swift in Sources */,
+				AA99E994245649070026E219 /* WorldTotal.swift in Sources */,
+				AA99E98024562EBA0026E219 /* SummaryCardView.swift in Sources */,
+				AA99E98424562EBA0026E219 /* CountrySummaryCardViews.swift in Sources */,
+				AA99E98F24563EE50026E219 /* WatchSummaryView.swift in Sources */,
+				AA99E97F24562EBA0026E219 /* Summary.swift in Sources */,
+				AA99E97124562E9A0026E219 /* AppState.swift in Sources */,
+				AA99E97C24562EB30026E219 /* DeathsStatsView.swift in Sources */,
+				AA99E95824562E4C0026E219 /* NotificationController.swift in Sources */,
+				AA99E97824562EAE0026E219 /* WatchCountryButton.swift in Sources */,
+				AA99E95624562E4C0026E219 /* ExtensionDelegate.swift in Sources */,
+				AA99E97024562E910026E219 /* Stats.swift in Sources */,
+				AA99E97D24562EB30026E219 /* TotalCasesStatView.swift in Sources */,
+				AA99E95A24562E4C0026E219 /* NotificationView.swift in Sources */,
+				AA99E97724562EAE0026E219 /* LastUpdatedView.swift in Sources */,
+				AA99E98124562EBA0026E219 /* GlobalSummaryCardView.swift in Sources */,
+				AA99E95C24562E4C0026E219 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA99E94024562E4B0026E219 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA99E93C24562E4B0026E219 /* CovidWatcher WatchKit App */;
+			targetProxy = AA99E93F24562E4B0026E219 /* PBXContainerItemProxy */;
+		};
+		AA99E94F24562E4C0026E219 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA99E94B24562E4C0026E219 /* CovidWatcher WatchKit Extension */;
+			targetProxy = AA99E94E24562E4C0026E219 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA8FE66E24280B6400DDA53A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA8FE66F24280B6400DDA53A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AA99E94224562E4B0026E219 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA99E94324562E4B0026E219 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA8FE67224280B6400DDA53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA8FE67324280B6400DDA53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA8FE67524280B6400DDA53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "COVID-19/COVID-19.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"COVID-19/Preview Content\"";
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "COVID-19/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.briannazamora.COVID-19";
+				PRODUCT_NAME = "COVID-19 Watcher Watcher";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA8FE67624280B6400DDA53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "COVID-19/COVID-19.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"COVID-19/Preview Content\"";
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "COVID-19/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.briannazamora.COVID-19";
+				PRODUCT_NAME = "COVID-19 Watcher Watcher";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA99E96424562E4D0026E219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.CovidWatcher;
+				PRODUCT_NAME = CovidWatcher;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA99E96524562E4D0026E219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.CovidWatcher;
+				PRODUCT_NAME = CovidWatcher;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AA99E96724562E4D0026E219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				IBSC_MODULE = CovidWatcher_WatchKit_Extension;
+				INFOPLIST_FILE = "CovidWatcher WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.CovidWatcher.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		AA99E96824562E4D0026E219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				IBSC_MODULE = CovidWatcher_WatchKit_Extension;
+				INFOPLIST_FILE = "CovidWatcher WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.CovidWatcher.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		AA99E96A24562E4D0026E219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CovidWatcher WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "CovidWatcher WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.CovidWatcher.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		AA99E96B24562E4D0026E219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CovidWatcher WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "CovidWatcher WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.CovidWatcher.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA8FE65B24280B6100DDA53A /* Build configuration list for PBXProject "COVID-19 Watcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8FE67224280B6400DDA53A /* Debug */,
+				AA8FE67324280B6400DDA53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA8FE67424280B6400DDA53A /* Build configuration list for PBXNativeTarget "COVID-19 Watcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8FE67524280B6400DDA53A /* Debug */,
+				AA8FE67624280B6400DDA53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA99E96C24562E4D0026E219 /* Build configuration list for PBXNativeTarget "CovidWatcher WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA99E96A24562E4D0026E219 /* Debug */,
+				AA99E96B24562E4D0026E219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA99E96D24562E4D0026E219 /* Build configuration list for PBXNativeTarget "CovidWatcher WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA99E96724562E4D0026E219 /* Debug */,
+				AA99E96824562E4D0026E219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA99E96E24562E4D0026E219 /* Build configuration list for PBXNativeTarget "CovidWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA99E96424562E4D0026E219 /* Debug */,
+				AA99E96524562E4D0026E219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA8FE65824280B6100DDA53A /* Project object */;
+}
